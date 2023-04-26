@@ -1,3 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 h1 {
-    color: red;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-bar {
+    height: 100vh;
+    background-image: url('james-dimas-QOWeRRZ7SDs-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title-box {
+    background-color: hsla(0, 0%, 16%, 0.3);
+    display: flex;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.left-heading {
+    font-size: 5rem;
+    margin-left: 5rem;
+}
+
+.shell-image {
+    width: 20vh;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
 }
