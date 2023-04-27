@@ -63,3 +63,14 @@ body {
 p, .right {
     font-family: "Shackle";
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #014b54;
+    color: #c4ada5;
+    text-align: center;
+    font-family: "Aquire";
+}
