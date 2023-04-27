@@ -2,9 +2,16 @@
     font-family: "Aquire";
     src: url('./fonts/aquire-font/Aquire-BW0ox.otf') format("opentype");
     src: url('./fonts/aquire-font/AquireBold-8Ma60.otf') format('opentype');
-    src: url('./fonts/aquire-font/AquireLight-YzE0o.otf') format('opentype'); 
+
 }
 
+@font-face {
+    font-family: "Shackle";
+    src: url('./fonts/shackle-font/ShackleRegular-p7EYr.otf') format('opentype'); 
+    src: url('./fonts/shackle-font/ShackleItalic-x31m5.otf') format ('opentype'); 
+    src: url('./fonts/shackle-font/ShackleRegular-ALvV7.ttf');
+    src: url('./fonts/shackle-font/ShackleItalic-DOml1.ttf');   
+}
 
 
 * {
@@ -15,6 +22,9 @@
 
 h1 {
     color: white;
+}
+
+h1, h2 {
     font-family: "Aquire";
 }
 
@@ -36,6 +46,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 20vh;
+    justify-content: space-evenly;
 }
 
 .left-heading {
@@ -47,4 +58,8 @@ body {
     width: 20vh;
     margin-top: .7rem;
     margin-bottom: .7rem;
+}
+
+p, .right {
+    font-family: "Shackle";
 }
