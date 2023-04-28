@@ -20,13 +20,22 @@
     padding: 0;
 }
 
+h1, h2 {
+    font-family: "Aquire";
+}
+
 h1 {
     color: white;
 }
 
-h1, h2 {
-    font-family: "Aquire";
-}
+h2 {
+    font-size: 2rem;
+    color: #014b54;
+    -webkit-text-fill-color: #c4ada5; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #014b54;
+    margin: 3vh 0;
+  }
 
 body {
     display: flex;
@@ -39,6 +48,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    width: 50vw;
 }
 
 .title-box {
@@ -60,6 +70,11 @@ body {
     margin-bottom: .7rem;
 }
 
+.right {
+    margin-left: 3vw;
+    margin-right: 5vw;
+}
+
 p, .right {
     font-family: "Shackle";
 }
@@ -73,4 +88,59 @@ footer {
     color: #c4ada5;
     text-align: center;
     font-family: "Aquire";
+}
+
+.intro {
+    margin-top: 8rem;
+}
+
+.intro > p, form {
+    color:#014b54;
+}
+
+.intro > p {
+margin-top: 1rem;
+font-size: 1.5rem;
+}
+
+p > span {
+    font-style: italic;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: .5vh;
+}
+
+form > div > div {
+    margin-top: 1vh;
+}
+
+input,
+textarea,
+select {
+	width: 21vw;
+    height: 3vh;
+}
+
+button {
+    margin-top: 2rem;
+    margin-right: 3vw;
+    margin-left: auto;
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-family: "Aquire";
+    color: #c4ada5;
+    background-color: #014b54;
+    border-radius: 15px;
+    border: 2px solid #c4ada5;
 }
