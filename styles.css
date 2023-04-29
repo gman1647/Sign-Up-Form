@@ -52,6 +52,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     width: 40vw;
+    min-width: 355px;
 }
 
 .title-box {
@@ -140,6 +141,7 @@ select {
 input {
     border: 2px solid #014b54;
     border-radius: 5px;
+    min-width: 160px;
 }
 
 .required-field-reminder, .sign-in {
