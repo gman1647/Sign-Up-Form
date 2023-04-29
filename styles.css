@@ -34,8 +34,11 @@ h2 {
     -webkit-text-fill-color: #c4ada5; 
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #014b54;
-    margin: 3vh 0;
   }
+
+h2, p {
+    margin-left: 3vw;
+}
 
 body {
     display: flex;
@@ -48,7 +51,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    width: 50vw;
+    width: 40vw;
 }
 
 .title-box {
@@ -60,20 +63,16 @@ body {
 }
 
 .left-heading {
-    font-size: 5rem;
-    margin-left: 5rem;
+    font-size: 4rem;
+    margin-left: 4rem;
 }
 
 .shell-image {
-    width: 20vh;
+    width: 15vh;
     margin-top: .7rem;
     margin-bottom: .7rem;
 }
 
-.right {
-    margin-left: 3vw;
-    margin-right: 5vw;
-}
 
 p, .right {
     font-family: "Shackle";
@@ -108,6 +107,13 @@ p > span {
     font-weight: 700;
 }
 
+.input-area {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-top: 2vh;
+    background-color: #f9f9f9;
+}
+
 form {
     display: flex;
     justify-content: space-around;
@@ -131,10 +137,36 @@ select {
     height: 3vh;
 }
 
+input {
+    border: 2px solid #014b54;
+    border-radius: 5px;
+}
+
+.required-field-reminder, .sign-in {
+    margin:1vh;
+    margin-left: 3vw;
+ 
+    color:#014b54;
+}
+
+.sign-in {
+    margin-top: 5vh;
+}
+
+a {
+    text-decoration: none;
+    color:#014b54;
+    background: #c4ada5;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #014b54;
+    font-family: "Aquire";
+}
+
 button {
     margin-top: 2rem;
     margin-right: 3vw;
-    margin-left: auto;
+    margin-left: 3vw;
     width: 200px;
     height: 50px;
     font-size: 1.2rem;
@@ -144,3 +176,8 @@ button {
     border-radius: 15px;
     border: 2px solid #c4ada5;
 }
+
+.error {
+    border: 2px solid red;
+}
+
