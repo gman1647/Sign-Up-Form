@@ -24,11 +24,11 @@
         </div>
         <div class="input-area">
         <h2>Let's do it!</h2>
-        <form>
+        <form id="my-form">
             <div>
                 <div>
                     <label for="first_name">*First Name:</label>
-                    <input type="text" id="first_name" name="first_name"placeholder="Required">
+                    <input type="text" id="first_name" name="first_name"placeholder="Required" required>
                 </div>
                 <div>
                     <label for="last_name">*Last Name:</label>
@@ -59,7 +59,7 @@
         </form>
         <p class="required-field-reminder">* denotes required field</p>
     </div>
-        <button>Do it!!</button>
+        <button type="submit" form="my-form">Do it!!</button>
         <p class="sign-in"> Already have an account? <a href=''>sign in</a> </p>
     </div>
     <footer>©2023 G.A. Baughman</footer>
