@@ -113,6 +113,7 @@ p > span {
     padding-bottom: 1vh;
     margin-top: 2vh;
     background-color: #f9f9f9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 form {
@@ -139,9 +140,14 @@ select {
 }
 
 input {
-    border: 2px solid #014b54;
+    border: 2px solid #c4ada5;
     border-radius: 5px;
     min-width: 160px;
+}
+
+input:focus {
+    border: 3px solid #014b54;
+    box-shadow: 5px 3px #c4ada5;
 }
 
 .required-field-reminder, .sign-in {
@@ -180,6 +186,6 @@ button {
 }
 
 .error {
-    border: 2px solid red;
+    border: 2px solid #014b54;
 }
 
