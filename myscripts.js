@@ -18,11 +18,12 @@ for(let i=0; i<errorBorderElements.length; i++)
 }
 
 function focusOut(removedHighlight) {
-    if (removedHighlight.value != '') {
-        console.log(removedHighlight.value);
-        removedHighlight.classList.remove('error');
-    } else if(removedHighlight.value == '') {
-        console.log("no text");
-        removedHighlight.classList.add('error');
-    }
-} 
+(removedHighlight.value != '') ? removedHighlight.classList.remove('error') : removedHighlight.classList.add('error')
+}
+
+/*
+let stuff = Array.from(errorBorderElements);
+stuff.forEach((element) => {
+    element.addEventListener('focusout',focusOut(element), false);
+});
+*/
