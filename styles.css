@@ -142,7 +142,7 @@ select {
 input {
     border: 2px solid #c4ada5;
     border-radius: 5px;
-    min-width: 160px;
+    min-width: 200px;
 }
 
 input:focus {
@@ -153,7 +153,6 @@ input:focus {
 .required-field-reminder, .sign-in {
     margin:1vh;
     margin-left: 3vw;
- 
     color:#014b54;
 }
 
