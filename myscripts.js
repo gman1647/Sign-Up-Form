@@ -1,29 +1,29 @@
-/*
-Compare text input of confirm password with the password box.
-If boxes match, allow submit
-If boxes do not match, throw error message
-
-Alert successful form submission (with disclaimer that it was not submitted)
-
-Remove "error" class when text entered
-*/
-
 let errorBorderElements = document.getElementsByClassName('required');
+let signIn = document.getElementById('sign-in');
 
-for(let i=0; i<errorBorderElements.length; i++)
-{
+//dummy link for registered members
+signIn.addEventListener('click',
+    () => {
+        alert("This doesn't go anywhere...yet");
+    },
+    false
+);
+
+//loops class 'required' to add event listener
+for(let i=0; i<errorBorderElements.length; i++) {
     errorBorderElements[i].addEventListener('focusout', function(){
     focusOut(errorBorderElements[i]);
     }, false);
 }
 
+//checks to see if text is already added to required fields. If so, removes highlighted border.
 function focusOut(removedHighlight) {
 (removedHighlight.value != '') ? removedHighlight.classList.remove('error') : removedHighlight.classList.add('error')
 }
 
-/*
-let stuff = Array.from(errorBorderElements);
-stuff.forEach((element) => {
-    element.addEventListener('focusout',focusOut(element), false);
-});
-*/
+function checkPasswordMatch() {
+    let pwd = document.getElementById('pwd').value;
+    let pwd2 = document.getElementById('pwd2').value;
+    if(pwd!==pwd2) alert('passwords do not match');
+    return false;
+}

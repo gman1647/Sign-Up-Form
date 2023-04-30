@@ -161,7 +161,12 @@ input:focus {
     margin-top: 5vh;
 }
 
-a {
+.returning-customer {
+    display: flex;
+    align-items: flex-start;
+}
+
+#sign-in {
     text-decoration: none;
     color:#014b54;
     background: #c4ada5;
@@ -169,6 +174,12 @@ a {
     border-radius: 10px;
     border: 1px solid #014b54;
     font-family: "Aquire";
+    width: 100px;
+    height: 30px;
+    font-size: 1rem; 
+    margin: 0;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
 }
 
 button {
@@ -183,6 +194,10 @@ button {
     background-color: #014b54;
     border-radius: 15px;
     border: 2px solid #c4ada5;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .error {

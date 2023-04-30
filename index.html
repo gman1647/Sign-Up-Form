@@ -59,9 +59,12 @@
         </form>
         <p class="required-field-reminder">* denotes required field</p>
     </div>
-        <button type="submit" form="my-form">Do it!!</button>
-        <p class="sign-in"> Already have an account? <a href=''>sign in</a> </p>
+        <button type="submit" form="my-form" id="submit-button" onclick="checkPasswordMatch()">Do it!!</button>
+    <div class="returning-customer">
+        <p class="sign-in"> Already have an account? <span><button type="button" id="sign-in">Sign In</button></span></p>
+        
     </div>
+</div>
     <footer>©2023 G.A. Baughman</footer>
 </body>
 <script src="myscripts.js"></script>
